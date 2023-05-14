@@ -1,0 +1,525 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=IBM+Plex+Mono:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(asset/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: transparent;
+    width: 100%;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.navigation-bar.sticky {
+    position: fixed;
+    background: #002137;
+    z-index: 9999;
+    box-shadow: 0 0 10px #fff;
+}
+
+
+
+.logo-text h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.text-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 25px;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+
+.text-links a:hover{
+    padding: 5px 10px;
+    background: #ffff;
+    color: #000;
+}
+
+.search-box {
+    display: flex;
+    border-radius: 50px;
+    padding: 5px;
+    background: #fff;
+}
+
+.search-box i {
+    padding: 5px;
+    text-align: center;
+    color: #000;
+}
+
+.search-box input {
+    padding: 5px;
+    outline: none;
+    color: #000;
+    background: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.exis-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+    color: #fff;
+}
+
+.home-content {
+    color: #fff;
+    text-align: justify;
+    padding-top: 200px;
+    margin-left: 150px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.home-content h1{
+    font-size: 50px;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+
+.home-content button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 18px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'IBM Plex Mono', monospace;
+    transition: all .4s ease-in-out;
+}
+
+.home-content button:hover {
+    background: #fff;
+    color: #000;
+}
+
+#about-us-section {
+    padding-top: 210px;
+    margin-top: 460px;
+    background: #002137;
+}
+
+#about-us-section h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 150px;
+    font-family: 'Bruno Ace SC', cursive;
+    color: #fff;
+
+}
+
+.about-us img {
+    width: 150%;
+}
+.about-us-content p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-us-content a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    transition: all .4s ease-in-out;
+}
+
+.about-us-content a:hover {
+    background: #ffff;
+    color: #000;
+}
+
+#games-section {
+    padding-top: 200px;
+    background: #002137;
+}
+
+#games-section h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.games-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 100%;
+    margin-top: 100px;
+    
+}
+
+.games-card .games-card-content {
+    width: 280px;
+    margin: 20px 40px;
+    overflow: hidden;
+    background: #00607a;
+    box-shadow: 0 0 10px #fff;
+    transition: all .3s ease-in-out;
+}
+.games-card .games-card-content:hover {
+    transform: scale(1.1);
+}
+.games-card .games-card-content img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.games-card .games-card-content .games-content {
+    padding: 20px;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+
+.games-card .games-card-content .games-content h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.games-card .games-card-content .games-content i {
+    color: yellow;
+    margin-bottom: 20px;
+}
+.games-card .games-card-content .games-content p {
+    font-size: 20px;
+}
+.games-card .games-card-content .games-content a {
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #ffff;
+    transition: all .4s ease-in-out;
+}
+.games-card .games-card-content .games-content a:hover{
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+}
+
+.mobile-games {
+    margin-top: 200px;
+}
+
+
+
+.hidden {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+
+}
+
+.show{
+    opacity: 1;
+}
+
+
+#contact-section {
+    padding-top: 200px;
+    background: #002137;
+}
+
+#contact-section h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 150px;
+}
+
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-content form input {
+    margin: 10px;
+    height: 50px;
+    padding: 15px;
+    width: 500px;
+    outline: none;
+}
+.contact-content form textarea {
+    width: 500px;
+    margin: 10px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+}
+.contact-content form button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+.contact-content form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.social-media {
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.social-media i {
+    background: #ffff;
+    color: #000;
+    margin-left: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-media .fa-facebook:hover {
+    background: blue;
+    color: #fff;
+    box-shadow: 0 0 15px blue;
+}
+
+.social-media .fa-twitch:hover {
+    background: #98c0e0;
+    color: #fff;
+    box-shadow: 0 0 15px #98c0e0;
+}
+
+.social-media .fa-twitter:hover {
+    background: #00acee;
+    color: #fff;
+    box-shadow: 0 0 15px #00acee;
+}
+
+.social-media .fa-google:hover {
+    background: #50c7c7;
+    color: red;
+    box-shadow: 0 0 15px #50c7c7;
+}
+
+
+@media (max-width: 1025px) {
+
+    body.disabled{
+        overflow: hidden;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .text-links  {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        max-width: 400px;
+        background: #002137;
+        color: #fff;
+        display: block;
+        padding: 40px;
+        text-align: center;
+        transition: all .3s ease-in-out;
+        z-index: 9999;
+    }
+
+    .text-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        color: #fff;
+    }
+
+    .text-links.show {
+        left: 0;
+    }
+
+    #about-us-section {
+        margin-top: 300px;
+    }
+
+    .home-content {
+        margin-left: 100px;
+    }
+
+    .about-us {
+        padding: 100px;
+    }
+    .about-us img {
+        width: 70%;
+    }
+    
+    .about-us-content p {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .contact-content {
+        flex-direction: column;
+    }
+    .contact-content {
+        margin-top: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+@media (max-width: 769px) {
+    .home-content {
+        text-align: center;
+        margin-left: 0;
+    }
+    .about-us {
+        padding: 100px;
+    }
+    .about-us img {
+        width: 60%;
+    }
+    
+    .about-us-content p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .contact-content {
+        margin-top: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .home-content {
+        text-align: center;
+        margin-left: 0;
+    }
+    .logo-text h2 {
+        font-size: 20px;
+    }
+    
+    .home-content {
+        margin-left: 50px;
+    }
+    .home-content h1{
+        font-size: 30px;
+    }
+    
+    .home-content p {
+        font-size: 14px;
+    }
+    
+    .search-box input {
+        font-size: 12px;
+    }
+
+    #about-us-section h1 {
+        margin-top: 40px;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-us img {
+        width: 100%;
+    }
+    
+    .about-us-content{
+        margin-bottom: 100px;
+    }
+    .contact-content {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .contact-content form input {
+        padding: 15px;
+        width: 300px;
+    }
+    .contact-content form textarea {
+        width: 300px;
+        padding: 10px;
+    }
+
+    .contact-content img {
+        width: 400px;
+    }
+}
+
+
+
+
